@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.freelance.android.miwok">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NumbersActivity"
+            android:label="@string/numbers"
+            android:theme="@style/NumbersTheme"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.FamilyActivity"
+            android:label="@string/family"
+            android:theme="@style/FamilyTheme"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ColorsActivity"
+            android:label="@string/colors"
+            android:theme="@style/ColorsTheme"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.PhrasesActivity"
+            android:label="@string/phrases"
+            android:theme="@style/PhrasesTheme"
+            android:parentActivityName=".activity.MainActivity" />
+    </application>
+
+</manifest>

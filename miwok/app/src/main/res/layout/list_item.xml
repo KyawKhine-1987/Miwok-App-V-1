@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding">
+
+        <TextView
+            android:id="@+id/tv_Miwok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/tv_Default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_size"
+            tools:text="one" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="@dimen/imageWidth"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/imageMarginRight"
+        android:src="@drawable/ic_play_arrow" />
+</RelativeLayout>
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal">
+    &lt;!&ndash;android:padding="@dimen/padding"&ndash;&gt;
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding">
+
+        <TextView
+            android:id="@+id/tv_Miwok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/tv_Default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_size"
+            tools:text="one" />
+
+        <ImageView
+            android:layout_width="@dimen/imageWidth"
+            android:layout_height="@dimen/imageWidth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/imageMarginRight"
+            android:src="@drawable/ic_play_arrow" />
+    </LinearLayout>
+    </LinearLayout>-->
